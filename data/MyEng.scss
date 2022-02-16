@@ -1,0 +1,116 @@
+@import "nav";
+
+.container {
+  height: 70vh;
+  width: 100vw;
+  background: rgb(105, 216, 255);
+  background: linear-gradient(
+    349deg,
+    rgba(105, 216, 255, 1) 0%,
+    rgba(0, 13, 244, 0.9332107843137255) 100%
+  );
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.mainSpace {
+  padding-top: 8rem;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgb(231, 242, 246);
+  background: linear-gradient(
+    349deg,
+    rgba(231, 242, 246, 1) 0%,
+    rgba(0, 185, 244, 0.865983893557423) 99%
+  );
+}
+
+.box {
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+  margin: 20px;
+  width: 40%;
+  height: 50px;
+  box-shadow: 3px 3px 15px 2px rgba(8, 5, 5, 0.5);
+}
+
+.BUTTON {
+  font-size: 1.6rem;
+  background: rgb(19, 65, 95);
+  color: white;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(9, 30, 44);
+  cursor: pointer;
+}
+
+.box {
+  border-radius: 2rem;
+  margin: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  height: 20vh;
+  width: 20vw;
+
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+.fa-youtube {
+  border-radius: 1.3rem;
+  font-size: 30px;
+  margin: 0px;
+  padding: 5px;
+}
+h1 {
+  @import url(https://fonts.googleapis.com/css?family=Khula:700);
+  font-family: Khula;
+  color: rgb(0, 0, 65);
+  font-size: 2rem;
+  text-shadow: -6px 6px 15px #0c337a;
+}
+.boockmarks {
+  background: #0f1b30;
+  height: 70vh;
+  width: 15vw;
+  padding: 2rem;
+  a {
+    margin: 2rem;
+    img {
+      margin-top: 2rem;
+      width: auto;
+    }
+    .google-docs {
+      width: 1.6rem;
+    }
+
+    //padding-top: 1rem;
+    //  background-color: white;
+  }
+}

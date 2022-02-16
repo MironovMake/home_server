@@ -1,0 +1,90 @@
+$one: rgb(17, 4, 92);
+$two: #006280;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 10vh;
+  background-image: linear-gradient(to bottom left, $two, $one);
+  color: rgb(255, 249, 249);
+  position: sticky;
+  top: 0px;
+  z-index: 6;
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+.home-page {
+  display: block;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#logo {
+  display: flex;
+  flex: 2 1 40rem;
+  align-items: center;
+}
+
+.heading {
+  background-image: linear-gradient(to top left, $two, $one);
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+  color: rgb(255, 249, 249);
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 7rem;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  background-image: linear-gradient(to bottom left, $two, $one);
+  margin-top: 20px;
+  color: whites;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 1.8rem;
+  box-shadow: 1rem;
+  box-shadow: -2px -4px 8px 0 rgba(0, 0, 0, 0.3),
+    10px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-image: linear-gradient(to bottom right, $two, $one);
+  height: 20vh;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}

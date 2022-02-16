@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="style_mobile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="myRoom">
+      <h2>Моя комната RGB</h2>
+
+      <input
+        type="color"
+        onchange="updateRGB()"
+        id="rgb"
+        class="RGB"
+        name="RGB"
+      /><br />
+
+      <h2>окно</h2>
+      <input
+        type="range"
+        onchange="updateslider()"
+        min="1"
+        max="100"
+        id="SLIDER"
+        class="slider"
+        name="window"
+      />
+      <br />
+      <input
+        type="button"
+        onclick="updateMyWindow()"
+        class="BUTTON"
+        name="MyWindow"
+        value="окно, запрет на открытие"
+        id="MyWindow"
+      />
+      <br />
+
+      <br />
+
+      <input
+        type="button"
+        onclick="updateHallPlant()"
+        class="BUTTON"
+        name="plant"
+        value="Цветок в зале"
+        id="HallPlant"
+      />
+      <br />
+      <input
+        type="button"
+        onclick="updateMoon()"
+        class="BUTTON"
+        name="Moon"
+        value="Луна"
+        id="Moon"
+      />
+      <br />
+      <input
+        type="button"
+        onclick="updateBath()"
+        class="BUTTON"
+        name="Bath"
+        value="Свет в ванной"
+        id="Bath"
+      />
+      <br />
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

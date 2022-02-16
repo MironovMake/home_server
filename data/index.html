@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="MyEng.css" />
+    <link rel="icon" href="../img/icons/SiteIcon.svg" />
+  </head>
+
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/"
+            class="fa fa-youtube"
+          ></a>
+        </h1>
+        <ul>
+          <li>
+            <a target="_blank" class="home-page" href="http://aleks-mag.xyz/index.html"
+              >Расписание</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="http://aleks-mag.xyz/formuls/formuls.html">Формулы</a>
+          </li>
+          <li>
+            <a target="_blank" href="http://aleks-mag.xyz/aboutMe/index.html">Обо мне</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container">
+      <section class="boockmarks">
+        <a target="_blank" href="https://docs.google.com/spreadsheets/u/0/">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArUlEQVQ4je2TMQ6CUBBE3xJr+VpZewRPYmEBVoYbiGew5gRgSeMBPIVHoKCywEgM/VoghKgxfrF0qs1OZna2GDG75QrVSFUNFhCREgjFjb0zMLYRd00chNEjUQYpZZAyHU7eGqiqcVDkm+sNnD5iAHFjT6GObQOT+L9JMGiG2X7dLo+LCID5YUteFZ8ZZNfTE5lXxct9F71f+BuAmMS/2DaxFddl0s29mtZiILwB87oyHUprhFIAAAAASUVORK5CYII=" /></a
+        ><a target="_blank" href="http://www.yandex.ru/?win=182&clid=2064708">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACj0lEQVQ4jV2TPWiedRTFf+f+n+dtvowISof0Fe1iQW0L9aOtFKNOxqGLnUSQtgqtk4N0FQQRoboZSSO62kwuxTEUrYI4uQgVaU1SRbDYpm8ied7/PQ5JQ+MdL/cM9/zOEYBBAgN4evfhWpu3kKYRfQCs30twGernWrzx7b0asTXew2ju7X8c8klK9LCoww7SFAEhUOnSnovflt/VMusAMuiPQ4w+NL5noWljpg5tuo3qriu6bxK1PawAqKzfKaUJDbu81AyWT/AT643Aw7Gp86UXM7Vjg26j8YO7m3L6nPXCK3h8kug2yH9uNrzxYtbbt7pmtDeTnjpfWDmj7ujUkdLqsoWcyJlRZr+2nnhKuXAB//IzOnGKeGy/68v7xOrtVNsa7NoNjzYuOqtQk9aQf+9EHDyyKb54gfreWXASB56FfQdEppFknCXUuJQzDeI5EhOKzJQmJolMfOM6jI6h8QnU62EbJKUgUJAYaTpC9KstMhVtz1y/iiX00nE0MYlv3QQJSYAJY4yqLUQ/2OZo6I3g5Wt4/iPiyacpH36Jph6F4XDraJs6d7PQYJaK9EjNNHJoZIz87AMYmyBee5t49TSsD7ZFKRQiC6La1wN7kUBICVhZzcQkPH4I//0XeXEO90Y2PbAdxpvOIuzvImudzfRQgQg51waKN885Dh4mP30fX7uKxsY3PZCEbSE5PXRlNnpX/vzR6flom8La2rDsfyZ1/HX5mwVz6SvH/Q+YtYE9WAWcSMNoo2R6vr2y8v3OKDeaqWWXadrKYLVsP75rhLu70u6M8o4y1b39T4rzJMoWFSqb6Ep6qzVlo4ovyq9L72yX6f917p7vHwtxyuljwMNb+JYQi0U5p8WVH+7V/AfKz1gUD8FBrgAAAABJRU5ErkJggg=="
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://www.thingiverse.com/"
+          ADD_DATE="1538847119"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACXklEQVQ4jaWTPYhddRDFf2fux8t+gTEuSgyIuysJ8QuMWGirLIiIGiIpxc5KtLFQLIJhyYJooSLY2klEIZUIKhgNSBoTXZA8tVCjYh5i5D12//fOsbhJoZY5TDtnhjO/EcAtJ7onmjpedt/vR4wAQjAUGJzmqnak6tuuL8d+fGH0gVY2tg9HU79LFbuy61xJ2Na0mNIPHU3AfCskubeJupYzp1l8tFYVx6hil0vXVUE1KykjH7o5uG0PCsF4gs/+bDJTc21klq5XU88ryita3SzbiCYE021rdTn8/ANSHTC+ZAzculvUFbz6ub31u1lqobewPasREVizolxbFhvr0ttnkpPnk84CQxXm8YPB8YdCL36UfPeHcq52JLRa2ywFUc86/MajoVNbyfcT8+BaMC1DBgstfDJO9i6JJ++u/MyHPW1YoK5GaLoD9+6DWvD++eT4esWRO4Pr5gaDP2dw0yI8d6rnsdtD9+2TT/8AiyOoQ1B6WNsjLkxMFeLNL5MTnybvHK5oK3jqvZ6FFppKjCdm5Xrx2dhIKPivBCXF5R3TpbHN3zumpNAQyb8UaWgquHBpcB5VJhimXYGIJkQIapmV3cMWdYCNA+P5Fs7+ApnwyIHg4uUEYLEVS+1gdPGv5OEDQVvBVz+ZhdFw4tqCwAj59S+SjfWQBCfPJW+dSaqAkubIXcHTh4KXPk5nYoWUhv+BtLYcfvb+AaRzv5o03HHjANJrp+2t31JLI/kqSFrdLN+oqQ+6dF0E1axYRr5nr9h/gwUwnugKytZcK2fSq6nrLN3X1/hM5aiu9Z3/Af8VUnBH0agjAAAAAElFTkSuQmCC"
+        /></a>
+        <a
+          target="_blank"
+          href="https://ru.aliexpress.com/"
+          ADD_DATE="1538878008"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJ0lEQVQ4jXWTsY/MaxSGn/d8v9nZaya7NBqaG1qr2EZkFTT+AhXuTRQkGrlXraFGIkiIhojGX6DZbUSjUanIba5psfntjtmZ77yKmVmS5RRfvuR873PO9+YcfXvA0W7hEcEZwGj33BvCeHZL1keVK/Jj1ulz2p+pmPDvxHOGMCJ1gELLhvI+/vpaOfoopVGAjX4JEXaCQrh7xF5eczRfNuTtd0X6w4rSuNYUsz73RihKuNaJtt4GHldrcLykUwrStU1pH6g07IUI1wnehtIPJyGFHSTCiUuj3vlLlIOH8LjOfNTMOeFxpRw8RO/8JVwa4YREgYQzobvI8s0ndFZO4BEoAs/6UAQeQWflBMs3n0B3caqRCDAqBW+2TD68Z2H1FB4aSoMUSAGlwUOzsHqKyYf3eLNFpQAmQKgUcphsvbhH7+I1umurTD5tk8MdcrjD5NM23bVVehevsfXiHjnMGUBosNLYADbeSQ7cfs7i2XO0D28xevMKgO7Js/Sv3uDbq5d8vn4BLQRIU4cGK42xpxOSxlnp//0vvb/+IZb3A5Bfv7D17C7t0zsoCgox12hwrCSSsI0k27itaKlDc/hPACb//4c3x6hfkMT8LbY1OFZSAvMDQhQ8GcM4pyPQCdR0IOuuWNg2NCDZTjBzqrNKEbBYpgBPv6afKnsqiMDeWCoKQf6gsyvE8/Vjt4Agl4oCeyOq6+U2vQ4EYOzfLQKznIFo0+vV9fJ3J8Ay4rT+TEoAAAAASUVORK5CYII="
+        /></a>
+        <a target="_blank" href="https://krsk.au.ru/" ADD_DATE="1539009645">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACbUlEQVQ4jU2TP4ucdRSFn3Pf951Z98/sbNQ1ENOIiKSIYBSEqIWooKQJ+BEMiLZ+BgsLZQsb0cpC0DpgsLFR1M40ErCwkWRBN5pNdsaZ373HYsaQ7jTP5d5zz1F8O/8I6T0qezKlTAGQhWxUBbXWWdi2jCU1tfpEce1eogiyWZkSQHkFVcEafHAQtkGiqgL7PoxwS5NroLPvD6OKAMo2tqg0mRGyrUwZnK20rWJTRWvJfJF0mUQVLjNbNDZkYUyWhB3KlA1Dla4+v8k/l/a4+eYpvnlpyqv7A/NlIgwuPnx2yg9vnGYrrMokWqk30NlkM98fNW7Nkskg3jr7EBcfGbh4rXH9zznTUfD2U9vsjYKogiwAenJlVMvkg+vHKMDL5NMXdrny5DavPTbil5snxCDuLIuNTqgKlXEX9B2mteTcTvDxMxNe2R/RB8yasc2j40BlZBNACFyFJSIbvdf//vzCDud3ew5u3OVolrx+ZoOX98ecNONloRK7oyALxAoWpm9ZTAKeOzXw3eG/vP/jbbbG4tLjG0ji/LTn9HZw5ekJk1HHX7O2PqFwCI2/PnQuG1+9OOXy2U3uLIvJEADcXRbbaw1wvCx2BnHmsxsczZORkz4qaTbv/PQ3v95ecGFv4HBuvvjtmHuLxrvnpjw8Dq7+fszPt064/MQO8zTd/ykdf/lHyVbLclukhPEDEXaZTpDLxoBZtmJrFO4yRdk9VbLtEaXxKFyZ6gKUq7XdBVTSDcIWWx3OtoKx1csuoUhrVSYXlWZtN1GJqkiDKklbKltIhgqZA8NCxsKOXBVnBa+0bVRt3VAbZCsWoTr4D/xZuFC2grAvAAAAAElFTkSuQmCC"
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://educon.by/index.php/materials/phys/energy"
+          ADD_DATE="1541012270"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACJElEQVQ4jYWSTUuUYRSGz32e90NnRsZIKQdSyCQYXESQgqWQEJTGiKYluPAntOtH9COkhaDZWH4grgQ1dRFEEYXUUNCHk1Q4o46N77zP85wWM0SC0llf9805hwv0cLrGc+h/AyIR2g+1E3PV69HuumpfRAAcS4uIFskH4aVHSw4Dp6t9T7G1JwdI4q4T81yX2VGgXLHUObmSPyiR4mNwYxri0QdtLWOvPgFwyq27QVgITggQMj937y+9uXgqtpMrVM71mMEMxVaOsAyQMSCZSrX1Njd0Tz5nEWHgtzaijQ0Nl99BRCIAiTFk5cngtd7mhplM9t32DjMQiq2v9meHO4eSjXa/6CgmETDIWFhJD17tb0k8+7DVP7X24zBkEA61uXymNnUhMX77ys3WJl0ouo6Sf+jp91sD6fXxvvZEPMJGbNx3ZzPZ6xMrAM0NdNxKNoa7B55QpTuTHUyvLwx3jbQ25Q9DBkgbqYv4y5vf+tIbRDR/p6Mn2TiWau9vScxksgNTa7Go33P+7E4xUAwWAQAtomqqFje/9j3dALBwr3MkeW7+4/eh6XViMFAItMOVD5EVCY01JUMRb/Ht5xuPV7W1M5lsamJVCxFRoC1AIkJEDhH5iusjvktEzE6kau3Lr7tzL15u52qjVcpV1pio5/mKAQLghMYWjVke7vrrEjP2gjDiKGaIEIiEZK+k80FJRFDW2+Uj2inAUmWHstraihDtl/QfqDASuSzwyzYAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://translate.google.com/"
+          ADD_DATE="1568995759"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jX2ST0hUURTGf/e+Ny/nn4ma05BOlIYFTZsGoj9Gi2gTRLUoCIpA3bRq1SpoIGpXSyFpWVCrNpFQG1GCiHBRGJkSKISmpM6Yo857954W8ydngrlw4HIv3znf951PXX28+tRop18ELICAACIQNiunX9xJjdPg6EA5/aBBaVRdbZimgUZgAC2UJ9ZNF0BcdS2bnfQaNXClcpP/P5WOuK2HI5+npqanPc+1ruuKtWCMRWuRQiF46VaAu+LQ3+fTHoX5HDx6GyIQmFmN9p4p/u6NRiM4jkZECIUcRIR43LnoVigP9Pm8+eIwMaeJN0FgS++zuQjL+QU8r0A8FkEpVeuBLevtaBYm5jRnD1nunvd5eMkHwIji21KE4laRe8PPERFESrRFhKqExbzi6F7Lu6+a3Aac7LFVY8dnLKsLExzs6uTZyCjLa+t0Jdq5cCrzz8QnYyEG+3xunDAs5RVDo051K2sk2RlvI92T4MfPedLdKY4c2Ie1FrfMhoUc3H8dqtmIlGn6othUnYy8/0C4yeN4uhff93EcBy1SMottJdvAFRnfcy1sFQNQCmMM1lqCIKgNkgC2bJLdBhZgNt/MuWMZ0t0pXo19xBhbkhBsbg1pz7tVnycRUAqU0oiAweVXsZVMqpmWWAQRCzjULrXuZLOfIuOTi+sAsZjD7ZsJkokwSoHWGqUUunGDTGH/Hnc2vEMzeKWN9tZQNQOVHDRsAJDcbR9cv9xMssNBxCJS0m6MYWnlz/BfVT0X3fHmE3AAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://github.com/"
+          ADD_DATE="1572177502"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVQ4jY3Tv2qVQRAF8PPdP7k3itoE7SOIKFZiDAZsfBJFfBDRQjBFGkFiJ/gKerGwsRAsvaKFFhYWgo3GxEA0P4vMhTUk4sDy7c6cMztzZr9kn2EFD/Eem7Xele/yfnxLnMP9Isxst9bMfhRmriX2MMLE/9ukOL1ZktUKvMANvMIGpnhT+9e4jmeFvTcjL2ELv7BevjFOYYgBFjBfsbXCbuLiIMnNJPPV0Tb6XddtJ9luJPqKDv0kO0n6SY4kuZVSeBc/cabRpWt06mZnLJaYu5im+oPPGB06pr9Fn1aCjV6SYcWOJhm3Nx9A7pKMkywk6ZIMe0k+JJHkRJLlruugf0ALg67rJFlJcrI4H4NHVc53fMLZf1RwDm/xu9peD5brcBuPa/8cSw3xAp7gW8V3apSXZoC1quI87uApTjcJFptXuFXf1VbVPl7WSK+1txdmjC9Nkom9f6fXggZ40ICON7Fj1feOvWc/zGGGK9XGqPGNcBdX9+P/AO1cPr7g2LjWAAAAAElFTkSuQmCC"
+        /></a>
+        <a
+          target="_blank"
+          href="https://rutracker.org/forum/index.php"
+          ADD_DATE="1605452052"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtElEQVQ4jY2TTWhUVxiGn+/cO3MzyUwzJNrG2MRoC4lVq1UQxCADWoUuhCxCcaEtZnAh/mwUrAtTukihVbBV/MlGwbhSUClCFwZGqoaaRhdqpWLHqb+JcXTGCRlnMvd8LhLjNG48y/N+POec9z2v8B7rXlOswnG9NWPWT3ySvJAt18z7AIzrrRXsL0HHtEzV3KkbGou5JKsiBK1/v2gcEyjGFP1RkVmoLgf+LJ+XqYD7zV/WS4luFalTcAQ+BcIT8k2L3dB098L1dwChh1s/znulKp1++E6ubvWOTJiushtmw4ykRwg3ASmQs1b1/CxxLk964A+OLgv8Vzwnj+Lf/hCvPh0ZpW/8BCXt1ZyJNx46Vi3Zq8Ac0G3GsCFVyofeAsTkgTmBJ3pk7+bqfelqkxKFDzT37ERtW+avyMJNRz/suDRTB29EJbO7QZPbZqcSmUkTHasRFRzAkLWRaE4rX3kQeWn7EnNXN8zUoYaTtV9/NRT46EDSqTp1pn6l/9kXhMc9uNJR43ocE2WtFXTZzcKvf3zztDnV4mR2xqf3PujtXu8EXqwAsCrPBb2HUBI0KcH+jvlWtFOQNsABCBX0UkXRv/u0MfA5bs4s3NN5Ofy8Jq6iXllgaUG3S6B/40GEdpBplH0sFRAFUEreq7NLd+23juO3vUlO4ee+xXW7zFhk2nciJgayBfh3Ml8F4AVV+X80mq1/vO7ENSmE0hNy0QgJvhfr0vJTrgi3gdvB/vhjFe0BwgLnHa/QtaCzq9VaWeQWKlepl49OAFy1WgtTulCsDPYiMgD8LTjb8wt6rrhDdc3BQsU6I34rMAg8AYyIrGpvV+f/XZh3aISBjcdFGC0s6R5/TjRjUB4CXa7K79YtBXzfbQVbP8xw6J0yjb1s7GH4lpZ5kbDK8b7fZlwsG7vzxubXrakOrLSVUCcAAAAASUVORK5CYII="
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://profi.ru/backoffice/n.php"
+          ADD_DATE="1606148977"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVQ4jWMUkNBQYGH5N4+B4b8jAwmAkYHh/O8/v4OYeQQE9jEwMFiSohkKJJmYWPQZRWRU/5OhGQ6Y8EnKykgzyMlIk2dAWWEuw7nj+xnOHt/PUFqYi9MArF7g5+NjuHP1DIqYirYxw8dPn4l3AbEAqwEfP31iqGlshbI/M9Q0tmK1nYEBhxdIASzIHGtLM4YNq5bg1eAfFsNw7PgpOJ/iMEBxwcdPnxmOHj+JV8OnT59Q+LRNiUQawLifAv3nmf78YUpiYPh/nnS9//f/+fM7CAAM+0CFLaEDdwAAAABJRU5ErkJggg=="
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.upwork.com/freelancers/~01891ebbaccd5b513c"
+          ADD_DATE="1606992752"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACMUlEQVQ4jY2TX0iTURjGf+d8a7oy0khmBmkmREstiCDqIspMHHknayhFsFAIusiuwpsuKogIpQyE1lUjYnrlhYFpuchAIhASA0FxjXLN4f6gLrd93+nCKWs46bk6nPP+Xl6e9zyCHFm91KYVN4SiHqjMXM8rGDHAHXEylV0vNg7VQxRE43QDHYDMbZyRLgR9i4JOHCQ3G2Tgt8D5POC/ErwPC5pwkJQA0Rg9/w0DKC6UGjwBEFYvtbrB5DZj55NuGBzXClvoEnD65pE77JBmAqt+LNpOHp3spbG8mfHQGEf31HDvxGNaKlrRVZqZ+HcAKSRrJqG4CNB4oJmEvsrnRR9maeba4XaCiV/4V+a4bevCPfOMhcRPuk+5kUJjMNCPUDSYgIP5Zuz3e7hbe5/x0BgPvnUBUFpoxVF5lcFAPwoqJKAAwn9ClFnKAbBa9pMyUvRMPySUCDK/PLvZdJepiKS+tmmnCQgANs+cG/cZLxLJubIGBvwe4qkYK+ll2qpcFJtL+J1YoK3KxRVfEwACfkgF7wA+BIdp/XgZKTRezb6g80s7ZlnAod3VOH1NTEUmWUkvYx89y0T4U2abDIuSN9RoMAlouR7YiusYvfSVioEiksZa7rNuSOpkxMmUEPRtZWI8GeXWxPWtYJTg+ZKD6fUseDHvMxgC6vNtJEcj4Rh2Okit/z4HybDELqAX0LcBdSV4ugFDVho3tPc1x6SGSygaVCbOYj3Ow4bk5ZKD6ez6v9rZzU64MJYbAAAAAElFTkSuQmCC"
+        /></a>
+        <a
+          target="_blank"
+          href="https://phys-ege.sdamgia.ru/?redir=1"
+          ADD_DATE="1611081870"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApklEQVQ4jY1T3RnEIAgL/RzAcRnBcbkFSh/O9mgK9nxRQ5Dwo4CWA/JR7IwDQB8Qxm6AKZzJpvA+IJkN7BxJ2aMZb8tIkZxGY594WZ0Tm7Qq+j9KTLGn8k9s7mUAU/iqum6aO8YONQbmHewcH58p3eVWEimdh71sIxeOh+k8b318Z4GjVv3ntBp+VXbTYkxJxZV/FpmxN97qM2EqAlB/pvc5pxQYOwC6sY7AqN6QegAAAABJRU5ErkJggg=="
+        /></a>
+        <a
+          target="_blank"
+          href="https://miro.com/app/dashboard/"
+          ADD_DATE="1614607304"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABb0lEQVQ4ja2TTUsCURSG33s1ry7CwIgI2rSohdigSBgSaAVSprTQTegPcBX9iugPRPs20aJFtFRoV4TQQFoY9kFthJSSts7cFtPMcXDcWHc19573POeZLyZVpQxgDaOtCpOqIkdsBgBw8yJeEBBhH8rXHBeXLoiwD/GCQKfLkC55IMI+7B2ModNlzoBitgcASJcEvF6JaFBHtc4RyQlkkhoA4PDEjUhO4OjUNQjIp3TrMF0SWAoZ+1abYXffg2iQ9sfn7kFAwC+xvapZhbMyTQGAiXF6VBsrlOP9oZkpCsUWySga1PH1Tfe+szkE8PhKodA8AYrZHqp1bsHmZmmQDVBrUqh/LSvO+jbA8ztDq82siVeqUVqPafj4pIZ+fRvg/olk8indsskkNTTfmKO+DaA2jJD5JkybfEpH44U76tsApnIxo+H2gVn6Ab/Ezd2vTUIfDqg1OaYnJbYSpGx+gdW6UVMWBgH/8jNV/tBf+QGINICc4ZrzSAAAAABJRU5ErkJggg=="
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.w3schools.com/JSREF/prop_style_display.asp"
+          ADD_DATE="1618251831"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABbUlEQVQ4jcWSPyhFYRjGf+85h5QykEUxYbAQiwxkEzFJyqpzTnEHGZSuRbKwUFf3flcsKCkDmf0ZTEwGuRsDsijCde895zPc43K5FgPv+D7f73mfnj7475FfUXGnG1+qMeXR+pWBxz3Qg+enLJS7B7otCLSFHbUBUO426M4cpHUER4WzBuYZRX4/2nCEZacdXw5z3niNiFWO1kdf7j7zmqojtHINwGKokpLUvsnO6SV9La0gtYABUgW6F6Tm/TbZroqwjFJ2T/dQ7iqW3wXiZUuM2c2InIB8KVWngDGQSLBIY6QbKHu44qGiHs+/+ACUuwkM5PM6ghMbRbkHQEeQZwMnOvT+xPhU7RSazCf6iYw5E2iTubUwSNRp/G5gxxMIqx+8LDCydBtox2i9m2PEaCqQAJDMNPCC5p7i5Fye5nlhwAed4OZ8nR8n5s6jnImCmnLXUG5eT99/opmexTOTBQ0kM87w8h32z/f/ft4AMdl8cgoInWYAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://how2electronics.com/control-stepper-motor-with-drv8825-driver-arduino/"
+          ADD_DATE="1619293748"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACs0lEQVQ4jQXBS2tcZRgA4Pe7nfuZSSadZppMjOnFKCXaWqiIBQteqKWlFav+DsGd7gVXrnQl1J8gXYgLBbORUsGV0DaNSSW3uXTOzJzbd77b6/MQVUrg7J8nRw//flaoJkoj3VRR6FvppuNZFLeACqkqL3BpEl175w3Ofe+P7b++++Gn3f8Gaad7Zq138HxvlmWRCD3uCx4cHp9MpuO0xZc6qRBf8lrK37a3H+/snu5fWDi1PCukH7ZblqDCVrvje4E2eKq7KAJXFpMwFLwy+un+fiH1WtySGsbjIvS5cazMp7JqKKF+EHSW2lLN+yu9/kqP18rWjQHhl9JKmTukqnFVpRFZVZayLtI0Vs3EQfX21RvnN5a5RQKEWePKsi4qba19793LL51pCwfO6iybceYQ9dbW5ltXLydRyH0BL2+cjdvrR6PSujwI/CtvXvrg+hU5n3OKF84tcQDpgCD4DDQi2TkYffPt98OJ3dkbzos6SQMOqrsQ6nLSXYq//uqL17c2jXUe5wSRUsbT2BPCOzx8Sohot1M/oLMXk+M6QzUjGDfSEKCAFhEppUCQG0esbhDcYmchm5V5Udz77JP3r11UspS5Ord5XjAqHQsYcw4JAAfAyfSFRb3a7wMbHQ8Oeyurr7z6Glg3ndSDUT4cTxGAU3d2Y1UA5Yyi1KpRjdbaD4O19fWfH/xy/8f7AiCNBDpnjFruLSQpv3P7xkcfXqdKO93UVZ4PTg6ULIlDzkRVVYPhyCA3yJShpaS7z0e//v7n470x9yiiVk2ZEV0CwMlgoBslmPA831intY3jVjZTCqNn+/nOXsaDILx182aSPnry71Fjp620qylbXGyNB0OtNedsPs8bi9wPCBGUejQK/U8/v3f37sdJkta1rGWtjen3+3GSUErjOEFErbR1BtEB4P/qOpDyV+1fhQAAAABJRU5ErkJggg=="
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://developedbyed.com/courses/enrolled/713831"
+          ADD_DATE="1626190073"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAChUlEQVQ4jQXBwWtcVRQH4N855943k8m8l0wySSdmrJhIglSkUjeVGoRu+hcI4saFG/8b3bpyJyK66iKIdtGCaCmIIlGnFRuDaZNJZpq8SWbeu/ee4/fRR7c/rqsZpMVkCSwGNo1CZEI2A3loMPaSgkYJYu72zmYubvfe4zIyMbGBIKRGRp5ayTQRJ/PU4LVVnznvPNn2tc7X350DHYFd2HSwP0jVBcO8z/u9q51212LI5iYfvH/r8GjMj356kkGWik7Q5CRNJ+NiXt+7ufXurY2lbgJqhgFwwRqJfnxw4M5qazakv57/e/K81fA331zvr/df7fXZp9Pr1e6Dk8tpqtN0tdcmseHzmXsxw5+jqrlciB6G6Oay7M7O6y5zTHQx5m9/OIQ0MdX+y1cn4LKeOGJ8tvv3uCFZdzmMZuXE//Z4dBm16BR/7e1HUdFQN3lvismvoyiZ3HjlHZ1VcbGYda+UVCW1L778Jl/brNH+9POvet2NCu54deFAmsPBsKWgD3c+IaTSU+z2qrXlo/PT+r/9y6f/mGQrW1ttbVcLc61Onh8eN0/LTNUJTCnlmupnT920lKVFv319+a0bEdUsphB4haQYPGuVLxwRQC6QMcwnIUY1OY+L88XqSu9Ke30p7+TFH3uD8u79+WBwlpQBOAbIJCFTMxFTTf2VhTtvv1Eenx+MT6tR2a5MBDXUQQBjJTOCwryaD9F79+Rk+P2jnw/Ko2GqR2dn7IQjvHoxMjIGwQhKSUkV5MB6GV97aWN7YzPLXMwksgZPoiSJFeREWUmJLIEBF81k3t395ffwsAZnHW3DmCxEZiZjmGODEtiikrARSEkpoeEybyzOKiCAgsElMED/AwL1U8aK3YzNAAAAAElFTkSuQmCC"
+        /></a>
+        <a target="_blank" href="https://icon-icons.com/" ADD_DATE="1626192445">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACKUlEQVQ4jXXSz2tdZRDG8c+85+bkklxd6KpYaAu2FIogIviDghHEjboRKxRUKBXEvQiC0urCP0BBFAu6qCAW9E/oQi1KVeKPQAOhLqWIBdOkTXLPOePinFyj4qxe3pl55jvDE5C/2+d27+A+jU8sOBMh7Yn0yiK3vUs8TX7F9unw9rUCJt5Ue8YtByx4w6aTkKkkfY3Jy8yfYjpm/AT1a+wmi2OmOo1boHHPMDg4Ef2zu5tETpmiHJoJtNvO5agq7iyTdqtcUzk/CHRc6Ppn835Xut+UyaQpZYPmvb0ryi8dz1+9lF846H8i3bE/vXgyHTm6+1eGTMT1vDdW8/4oeTSJ/zaLWP7jcFz98OFYXn1saeni6O/s5Xy1rGZWP2bG5TZdykf6rgxnsx/ydT4U33ZN9UNmXMn0Xb6+l+DJbl3b/ulG1oXWo2BN7YBaZmgt5Tiq9oaNXNfqPOVslkKGlCjCvEaacwgcjm2nYktEKu7SSmFOKFKHMkIMG4dUuSmNPOebPKh1USfNeUDjcRtgNNSGFTlCyn8dLRVhn9oRnR1hv0ql0wmDHYRjolcrM9u2FszZcd6D8fw/RC/lxxa9YFMjVGBFFoZt+uiMMHUVfJa1lazB1BW7vP3Ful0Cg2I34KewOCNamTlmcWgldFI1EERKa8aKFCpF+HnGdGJoGvlFKALzCtZciLb3wY633PS9sdqmj6z7FDwbrYie7Cef2/KBWm3LsnQG/gKqoeJIZqaGFwAAAABJRU5ErkJggg=="
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.thingiverse.com/thing:4818286"
+          ADD_DATE="1626881660"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACXklEQVQ4jaWTPYhddRDFf2fux8t+gTEuSgyIuysJ8QuMWGirLIiIGiIpxc5KtLFQLIJhyYJooSLY2klEIZUIKhgNSBoTXZA8tVCjYh5i5D12//fOsbhJoZY5TDtnhjO/EcAtJ7onmjpedt/vR4wAQjAUGJzmqnak6tuuL8d+fGH0gVY2tg9HU79LFbuy61xJ2Na0mNIPHU3AfCskubeJupYzp1l8tFYVx6hil0vXVUE1KykjH7o5uG0PCsF4gs/+bDJTc21klq5XU88ryita3SzbiCYE021rdTn8/ANSHTC+ZAzculvUFbz6ub31u1lqobewPasREVizolxbFhvr0ttnkpPnk84CQxXm8YPB8YdCL36UfPeHcq52JLRa2ywFUc86/MajoVNbyfcT8+BaMC1DBgstfDJO9i6JJ++u/MyHPW1YoK5GaLoD9+6DWvD++eT4esWRO4Pr5gaDP2dw0yI8d6rnsdtD9+2TT/8AiyOoQ1B6WNsjLkxMFeLNL5MTnybvHK5oK3jqvZ6FFppKjCdm5Xrx2dhIKPivBCXF5R3TpbHN3zumpNAQyb8UaWgquHBpcB5VJhimXYGIJkQIapmV3cMWdYCNA+P5Fs7+ApnwyIHg4uUEYLEVS+1gdPGv5OEDQVvBVz+ZhdFw4tqCwAj59S+SjfWQBCfPJW+dSaqAkubIXcHTh4KXPk5nYoWUhv+BtLYcfvb+AaRzv5o03HHjANJrp+2t31JLI/kqSFrdLN+oqQ+6dF0E1axYRr5nr9h/gwUwnugKytZcK2fSq6nrLN3X1/hM5aiu9Z3/Af8VUnBH0agjAAAAAElFTkSuQmCC"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols"
+          ADD_DATE="1627195686"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACT0lEQVQ4jX1TTUhUURT+zr33vTfONPEkEZIkEEIIKqSFUxFJmbYSIWfalLUp14LLFuOmTRDtooIWlZjawhZBhEWEmBJFCQ1hFIUW/Wgq6ozvvfvuaTEzNirj2Vw4P9/3nY9zgXKRhihbKwnaIs/H+xp2W06knVnWkWCXDXlSIRsaM/r09NhDAFBlALhlINEtbdXr7HDiwVIAvRJOSwVXKIoHq2a4SLReZl42NT9oTDiVkWukRDw3693Rq/qK2qY+C1tIbzVsH0mOvwDnVa4H2JtPSqm6Yfitn/OOIjQ/BYkeo02Tt+z3jCTHHoEhQOD1K6QhkELYOnTkBgNWdi64GquOdvpLvhtq3amXaPT5+fHvSEOAYIpjeQAGgWBahg5fBtEJsO61o+p6sKyrhCUlSVHjh8FEgYg3uk0AuOl+4y7bUVNEuGCkmWMpPuX+zM7Htle2qQrrnvF5alF/bXiVmsmVAigM5qU7FeISQN50+Hc405HxS3r6mgcSQbSqYiA+V3sOmLmFQUikEAKAQKqwD4t6ZjOZSWX8gsMEQGAQUrjZx968H0ghjgEAkv89EEivHZMm0B4AwBAEAAbASILxK99gmDYdnsCHAgCZ15FKe+fJ/kRbUV7BXmPsaKvj2pYhfllCsGYiAKDl7v6YiMXfCVvW6pw+62PhCQDYcE9ZEdkXajO9qL/t22gilbzc3H+owYqpfjum6r2FAADguBaCleCj5wdnnnVMTBZ7NykoFg7erIlWVdddhMGBwpLvZ39/uf2m60d24/Dm2OoLl6n9Aw4c7d8JC2r8AAAAAElFTkSuQmCC"
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://randomnerdtutorials.com/esp32-esp8266-web-server-physical-button/"
+          ADD_DATE="1628300407"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAA/UlEQVQ4jWNk8GpgIAUwkaSagYGBBZkToicjzMuJLLL32tM777/h1NCQ7K6tIoNmZMe87ZVrT2HXwMDAcPXOE538uRC2iiDXkrKgiiTPufuuwO3B54c777/N33KSgYHBWUsaLkjA0zZ6igwMDDeevsPpJEVp0SsTkyFsbk4OBWmRjfvOHXzwFqeGr99/nr/xmIGBwcZQVUyIN6Nt2cyjt5EVoDvp1btPsdN3xU7f5Vo+/+v3nxXxbmgKcPrhzvtvtTO2KEiLLM50I0oDAwPDzKO39568FuRsZK8gTJQGBgaGjMlbGRgYOtM94SKoMT13J6bD4puWIKcXRpqnVgACQlNDGz7+wAAAAABJRU5ErkJggg=="
+        /></a>
+        <a
+          target="_blank"
+          href="https://phys-oge.sdamgia.ru/"
+          ADD_DATE="1629184344"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAp0lEQVQ4jY1TyxXDMAiT/bwA27D/ydt4A+jFTYkCTnNJLIQlPmmgx4HmKsY4APS5GmM3wFScyabifa6WxcDJkZRdmvF6RorkVI1z4uH0ncTaqNT/cWIqltr/YvtdCpiKn7rrppImxgkNBvYZnBwv3yXd7VYWqZxHvBwjN46X6XLb5+qZajV/Lmvg12U3lXxNycVVf6bM2Bvv9DNhOwKActzve04lMPYBRYKjA7Zo+fkAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://en.cppreference.com/w/"
+          ADD_DATE="1630815564"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADU0lEQVQ4jWVTb2yTdRB+fu+/tW/ft2tLy9Y2YxurLRtrm43RFcrGGNtEgmaKKyQiCUFQiCTGgDF+kCZ+8AMqkcTEZpoFAqy+YgwjGI2MsTI7Mmf8E3TTRWDGQZSybC04Rrf3/LKabF5yyeXunnsuT+4Ylpg2QD6dEJie+rssl3uk8Jw4o1iKxo0Svn92PRtd2i/kg/gFks2F2NrzyXt7r3/bWztxa8TxcCbLJIMMZ4l3Mhh6fCgxQCdGL+GrWIzpi6ac+pFM739645B/bWsaAC24DiALYCafCzdHfz17mTYuAndoxH98Mbt9pa9uGgDxgvDAYne946pYHala21QcCLWVu8sqD0gG+TYA2vzUi6c/+pJsABgA4GSSAnUN7cMASDLI6VXBxjZNI36RLhrxPn/kOYD1QhSDmkbSf8X9r3cdkQrkecY43Rdo3Bsj4ha0eX5ZUekbWh8pAASP54kCwFMAQOY44Xh40856gBjWRJ68CkC3OUqS8a+pMM8I4IuGLbupu5/WA8RAxBY4wxZbMR09kewkIsb9NXHTDwDl3tqeN3cF5wD4o1EWAVAtigWz3R++ZgaYE4x5AfgAbLfanXN/3LyuM8ZUGIzKPMcLenTf2y0m1bLHbFmuy0ohASCTaiWzZTlVBhsnrXb3P2aLg3hBIp4X50yqlVqfPnhLeDhzn4mSQS9yV2QC9a3DdRue+WD0h2R1qjfRsPvQ8d8LlxWnJEmmyfTEPVlW3Z3H9m/0VIVcW6Ov9phUSwY8L86LkkF/5a1z7QAQj5MI4Kh/TQslknQkL3YsRlxT00EFwNS+w/Hbp/qpHAAEk2q7l83ctd8ZH2nr6qMrezaxKUfRisn6zR3ZeYbLmkb84Mi5bcfedZgeZNLfhJt33PFWr/vpRh/GOzo0Hs4S72cAqPSxmrtnrtCB7kEqO3OVrN0pqjmbolWJJL2wurZ5HABZHa6XtRR5Tl5Iu/ObsXBDNPLdtfOXcrlZg6eyPtPS/tJARVXoZz33aG5sZKim/2JXZOyXa6rBqI5Ftuzc1vt552//O2XniqpdvCBOAyAwRiazjRSzLf8TZDAqg6ENO7wLEA5LjIvFiCv11KwzKtYEz0t/ApgFcF+SjEM2u+twLD4s5zdeCv4X6Fc+v4DR/AEAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.geeksforgeeks.org/vector-in-cpp-stl/"
+          ADD_DATE="1630818120"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBElEQVQ4je2PMU4CYRSEv/cv1sIJ4ALgHmEt3FjKDTjCEoitHAAC3oAbSEnYBm/wZ0msd29AT/YfCwMajAWxM37VezPJZAb++TV2PLrT9MGZJmA3oEpiXozz5y/eAqwNqoIs2403K4DGZ5SaQssQ5M1Zx8GiN0tbEt6hZYBMIZTOEWM0vzU4pzu7GziYA5WwVTHaTH6c0JulE4OnS7YLvRajPGmcC8f/I1QDYR6pLMZ5dvKm6RLYnxrE8/uO6trLbAt44NogC6JfB5VXji3Gi7DKUBvRtyiK/XBdOgA/XJcWRTFiD0oQrTqE2914s3p7zP0hkEhmoEQyOwQSP1yXl0z+y7wDOll6dr4VpWEAAAAASUVORK5CYII="
+        /></a>
+        <a
+          target="_blank"
+          href="https://dictionary.cambridge.org/dictionary/english/tense"
+          ADD_DATE="1630826039"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACxElEQVQ4jW2SSUxTURSGv9cBpC0gPKstIAgGXWhQaY1RjEOMRkEToyZOcYga4s6YmLjSGNMFFhLj0p2RuNDoRqMYZ3RhVHCqCqVKgFb7KAhCnwwt7XFRwyB+u3vP/c/5cu9VAE5tqpJ5CY14vh0SwsjAIE61lMTmbUAS453b9EeCKE4LkgSz1kOH0UHdg7uKCWBeQuPodug0tcKHHPTWd7jWVBHdswsDYA0GCP14jdluQRuOMtbaDjNdAJgA+lWV0Ldv/HBnE19kJDM2G4DocJw+rY/FQLCtn6GlGZDMoXhJKf26CoABIDs6g9krTBhGzTgKfjFWIAB0az2o+TkApHX3olp00kwGbPtSmXGDjIEQgTo/NqDPMIukLQ5boKQ4j+9aBCcpfnt1LNJOEEjYsyYaGAuKcLl3MJmgIgRfNZJMJOk2Krh2e6bU3zW/B5pTi9qLl0REpEOLiO9LQLriIvfPnpaP7kx5U5Ypz2svSK+IvP/sly6tR0REai9ekvE7AIgKdIXCzHTMIWGCQns+xlgahriZkrxCYkCuw0F7KIQ+yUQBuLb3gOxbtnCKou9XmJ+rNjOWGKHw7UsWWHOn1Ot9fg7W16f+wUCwhea2emKVs9Db0rF86qXi0BkiVVsxAqrfz+Or57FszyLWYsXW0Yme4Z54xtHycpynitAXOMmpSEdfZgPgxY0GGE5NVI/ZGCzJw7rBTNbGUkbLyycaWIvdhOs6mTMjykiBin1hOgBrd27h2Z0GAJLhdHKzhxiba2HwYYCM4kkG1SerlSfzdxGv6cD4tZdIOAZA460GVlauB2CgxYAhoGA+95Hbi/dw/GS1wr/U7D8sTS6kyYWI1yPBoVG5ef2eiNczvl9z5IRMC07m3t2ncqWsTMTrEV1EhkREvB65vHKFPGtsmhaervGX+49eiM/3FoDlyytYt9r937N/AOMPMx2NSqPbAAAAAElFTkSuQmCC"
+        /></a>
+        <a target="_blank" href="https://cssgradient.io/" ADD_DATE="1630843301">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACPklEQVQ4jWVTPWtUQRQ9587u+5j3shEbg+CCiGBjJygI+wNMFz/qFOlEixSCqVLFLlXsUvgHTBftA4JF/oGIEMFExYQYNdm3782xmJfdGO8Uc2eYe+ecc+8lohGAAKB7+9kdVxbzzvuBlVnfvAdKv2M+3WKavdpfvvf+bAwxtodJ9+aVF1Zkj63XSy3vgnkKFjncVAHrTcNlbsgif/ntYPc5lh9VAGAx05PUXbu4QZcsAkrUVLXUhPYHKTRBo5M6BCXMy8VLl69u4M2HFBINgGzmcIVMZ9WcVBBEoENxjI4gAXWAoObXz4pT07MzP36vgBTh79+yXvHOfO7oc1qZm3kvKzPSZ5FCkcO8F8uM5n2wnpd534wSd9fQ7SxInUSEIh0JDIQ0VgoiRBGkQFB1ENM8Sc0WDEEDohEEA0VgAh2nHkOsUQgERJCm0VAiBwagD4iMFRHORmvix7QEwIinqQmgb6dPdG4/f2gZQa3KLTgZgJ2YlQJ4Br/+AcH2jhApCp2uAHw2GLdERxABksaRPBUx6hrRmwCToMBOQgVtGUb1OlFXEtuoVotxkwogIVGQKEFwRg2PKyisG/683gawRksciBpigBBLBkqRmhjLGADVrph2akZruw9ubBsAhr3vS9Jwky5LQFBUrVY2ClAkUQOgKy8k4ehwc++gWBq3MvB22Hzcn5OqVZAVXdohnYFx0cyY5B0aKx0frX798mkOT68PYytPRJ6Ms5+ad2U2sDLr03uwzHfM+y2myX/j/Bf4DwXbJZUOAwAAAABJRU5ErkJggg=="
+        /></a>
+
+        <a
+          target="_blank"
+          href="http://aleks-mag.xyz/formuls/formuls.html"
+          ADD_DATE="1631527602"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADKklEQVQ4jXVTX2hbdRT+zu/e/Lu5TbKsaZpOrPQPTq9GG1pnq4Mts1AHOje2hzEfBr4IA/eoD8LukCHrBBGGD74oDgWHG1Xc2BBREDpB7WCizNLWLrNpt/xpdpPcxJtffseHZXaIfk8HDufjfN85H/Bv2LYAgEcTMLNWMrsjnZjaPmQm7u/9Pw4c0ABg5+Ob90yOpOYnM33eZKZPPjeSyu2wEkf+i4T+qZgJRBw/eWbyifPHvmjfKYdcTzIzwwj4yRc2cWP84N7F09MzAAQABQB6Z5pAxPie3xA/nj3xSF+csof3t3O5vDBMAwMDA+0Ln5/jaz2D5zDLr2OC3oHNAjYpHbYtYJPChT8PI4C3e+Gq57PPqPRoRpt4eoyj8RhB6FqrvKYurXso6jiFL2/cwot0BjaLuxIuriZA9JseCsU/uP0p70pq2pVfFtnaOgAzGsGvvy9j3Oqnr9a4/UroBSEbbhHMFnanCncNYbEPZqRbNjz1SWxceMKHbRmLgkaITNOkZ7elSRkRfGaOCek22zAjCWj6XnTMAASNQmgMUvxNux+nW8McVH+xLxSDbsTYQItPraf4orMZpDFDaAzFYxsmEnohJcAgnRv0XjuNcL2KV+VNJtHESSdJ041B6MKFVBpBSkAgubEBUIbQAIKQAT+jVitEEtY6hI88qSjYNeRojUZJ+gIKRAJCAxSXNgja6mf4dNJa0um/nls7VCyUd3YnA5uenGqHt2bleCzuf7lcrDw4n1vVZMuBrhGY5zYkRKIz8aXlow8v5GOxVjP4QGawy3Hr/PFCIw8iDKd8m3pj4R5raUluKdbU/HBjsdTTd76zgS2wPZRLX1t6y9CD8SppZr5QLd6utmqlcqVZLleaxapXzxecUhUwDd0ff+zqwgnsMlYAW+iArcBM3xF9NPHm1/3EfKw7ZiSE7g8XXO4iMIZ0n9EdNep/3ISv0XSOz05Pfdh5fdW5AjGYaZboeObozA8ra5Ujzpbo6PWCJwDAclt3Vm5VfnJr9ffn3t1z6V5u7stCh8S2xZz90uU54PLIt6sPFatySAIoe2rh7GtPLXfyLkCk7o39DejrWsLLzMvVAAAAAElFTkSuQmCC"
+        /></a>
+        <a
+          target="_blank"
+        href="https://www.tinkercad.com/dashboard" ADD_DATE="1642074376" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABZElEQVQ4jaWSv0tCURTHP08f1tIQhFCTPMnAoSwMh7bASvIvCF3KcuoHzY3NgtkitJRbW6G+oNkgoygDA8M3FkTg0BQlt+35rlf6QV+4nHu+555zv3w52sf8qKALeniom6Lt0xROX73QXAD6WcM+EnYvpNSdquCaWsGdqticC+BzIYAzfgdtalnKXT92dKF9MCMP/K8H+th6RClseo8VLtof7C3JKCaEEEI4Y7bqEU5kqx5Rr4Ukrl4LCXB40Fws4C8lpeGXT7vsXfUpn76+5O27PcBfStJcLEgPIyM7bEy/S9zD/SRD3rSda0YxoZj4Ww+C47eabp0uKYWT8JbCPfoGFQ786AAiH+tISpsATAwPkIkH2C42uHt+AyAXNQAwrRblZgtweKClTbsZIBMPcHTzTCYub+f6uUXM6KixB4h8TFICcHj9pIjORQ1Mq9VRzFpZMXE27FUagz082J/zq+v5V3wBbcGLncuBgQsAAAAASUVORK5CYII=">
+      </a>
+
+
+        <a
+          target="_blank"
+          href="https://hpanel.hostinger.com/hosting/"
+          ADD_DATE="1631514044"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC0klEQVQ4jXVTTYhVZRh+nu9859y/OaP32vRDWuoiaBZBGPZjxSg6Esas0jERyQLNhYVEUUQwkUGrFq0iKiJajW5aalGzmIZRZohcCAW2cJPa3FHm/p17zvd9T4uZSxPYs3zhfXn+3kgSw/WJo1vTQ/jt+rc38T+Y2DWb7hk9+dK20vjvV/8+5wdzQxC9jg7XKo2518cvnT22Z+7Bux1oxEUUFL6856Ht8yf3zh8/sWOhCgAGhGDQiaKkFsfV98sx5l8Zu3z/ul0CQNGrBEE9Y6LHy+X610Pb9RkAWAjEYUVBXs51HYAHksRsHBv7eanVSgksIk0f0bCrRh5tOpcViIyxBpsg0AIABAGiAGuEzMTJzZmLu916CSOYXqmPb65YW4kR5AgUqwwIaRKeYGGgABC+6L53Yt8vS5CJQUhGluIFj7Df+PyjSrLpeWk5BqFVCZNolJN67IIFaVGK07cJ8x8T+8XKh9186XspP9vJmi8OV83GKcGsMjior/r57YU8dJZJuE7eFEURkGgEeATAMpg6DR/+4uLONwFg6lEZAiJAvfDkd8NbNmw7Q7EuoEnDXAEiGSAFERIZTFBko1q9NJRf+fT8E+fslMDekcVPmrf8NcrNiny3Vh7Zm0S1tQABghAC+kUbkoONUsDe+AHCeTtFhrcmF0ZrlQ3vZMWdaS9zppc1723r1rOQ6dKQghepEcqcBkHriqhcxvK/Jr4cus5nIbHVQ3CtfZ9feKYB4Kf1Jp46cKUeivbpAJYEkUK0rgdMAKhftAoAfO3puca1Un+l1fqDwA6kaUu+yO8DkRBwAC24KnAtBTRtVI7AEDmX+SzQzczsdms1FgBsHbt8Jynhr5Id2qxAgPQgZACg/SffyLLbr4bgfwVQjSu9QQk0kPDNzM4bWYGniqL7sfd5BwE1aGDzGg6OTien9l86MrFrNr3bRw5w7LkfH/vg+OJRSfwHdMlSLfv7uUAAAAAASUVORK5CYII="
+        /></a>
+
+        <a target="_blank" href="https://docs.google.com/document/u/0/">
+          <img class="google-docs"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABDElEQVR4nO3bsQ2DMBRFUU/goYIlhmARFjD2ICzDKlQUX24onC6KFJpECg/hi3T7l5MoovnOvT3DXH3INnaxLCHZ9ohW71BItnWxLCHbOMzVu6OnT3t4TLaqx/69ydY+7eHzw8eyy8edVtlfCMNcfRPf/MEvYZirdyHbKB8jKmQbXRfLoh6iqotlcXf6t//6F5Bsc+oR6gBQD1AHgHqAOgDUA9T9DHC1BwAAAAAAAABOBLhLAKgHqANAPUAdAOoB6ngPAAAAAAAAAIB2A0A9QB0A6gHqAFAPUHfp9wAAAAAAAAAAuCjAXQJAPUAdAOoB6gBQD1AHQPMnMxxNtX421/zhZPOnsxxPN34+/wQDhKXRzrKb+AAAAABJRU5ErkJggg=="
+        /></a>
+        <DT><A HREF="https://www.tinkercad.com/dashboard" ADD_DATE="1632569579" LAST_MODIFIED="1632569579"></A>
+      </section>
+     
+     
+      <div class="mainSpace">
+    
+        
+        <input
+          type="color"
+          onchange="updateRGB()"
+          id="rgb"
+          class="RGB"
+          name="RGB"
+        />
+  
+        <input
+          type="range"
+          onchange="updateslider()"
+          min="1"
+          max="100"
+          id="SLIDER"
+          class="slider"
+          name="window"
+        />
+        <input
+          type="button"
+          onclick="updateMyWindow()"
+          class="BUTTON"
+          name="MyWindow"
+          value="окно, запрет на открытие"
+          id="MyWindow"
+        />
+        <input
+          type="button"
+          onclick="updateHallPlant()"
+          class="BUTTON"
+          name="plant"
+          value="Цветок в зале"
+          id="HallPlant"
+        />
+        <input
+          type="button"
+          onclick="updateBath()"
+          class="BUTTON"
+          name="Bath"
+          value="Свет в ванной"
+          id="Bath"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://vk.com/mag_aleksandr"
+              class="fa fa-vk"
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/miralexgenn"
+              class="fa fa-linkedin"
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mag._aleks?r=nametag"
+              class="fa fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://join.skype.com/invite/h7KmJTzLLjtA"
+              class="fa fa-skype"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
