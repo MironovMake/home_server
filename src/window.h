@@ -2,7 +2,7 @@ class WINDOW : AccelStepper
 {
 public:
     int windowCurrentPositiopn = 30 * 200 * 3.5;
-    int dirPin;
+
     int windowNewPositiopn;
     char *topic = "/slider";
     int switchPin;
@@ -10,12 +10,10 @@ public:
     String name;
     WINDOW(int motorInterfaceTyp, int step, int dir, int enable, int SwitchPin, String NAME) : AccelStepper(motorInterfaceTyp, step, dir)
     {
-        dirPin = dir;
         name = NAME;
         // setup pin which responsible for power supply
         motorPowerPin = enable;
         pinMode(motorPowerPin, OUTPUT);
-        pinMode(dirPin, OUTPUT);
         digitalWrite(motorPowerPin, HIGH); // off the motor
         // switch responsible for define when window close
         pinMode(SwitchPin, INPUT);
@@ -39,7 +37,6 @@ public:
         {
             // run by constant speed
             digitalWrite(motorPowerPin, LOW);
-            digitalWrite(dirPin, HIGH); // off the
             setMaxSpeed(1300);
             setAcceleration(800);
             setSpeed(1300);
